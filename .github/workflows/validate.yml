@@ -1,0 +1,40 @@
+name: Validate skill
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Check required skill files
+        run: |
+          test -f SKILL.md
+          test -f agents/openai.yaml
+          test -f references/prompt-patterns.md
+          test -f scripts/build_prompt_pack.py
+      - name: Compile scripts
+        run: python -m py_compile scripts/build_prompt_pack.py
+      - name: Smoke test prompt pack
+        run: |
+          python scripts/build_prompt_pack.py \
+            --title "Morning Coffee" \
+            --story "A quiet morning product film where sunlight reaches a table, a hand places a ceramic coffee cup, steam rises, a book opens, and the final frame holds on the cup and breakfast." \
+            --subject "A cream ceramic coffee cup with black coffee and light steam." \
+            --scene "Apartment breakfast table, white curtain, open book, croissant, natural morning light." \
+            --style "Warm realistic lifestyle ad, clean natural light, calm premium mood." \
+            --format json > /tmp/prompt-pack.json
+          python - <<'PY'
+          import json
+
+          with open("/tmp/prompt-pack.json", encoding="utf-8") as fh:
+              data = json.load(fh)
+          assert data["grid"] in (4, 9, 16, 25)
+          assert "storyboard" in data["storyboard_image_prompt"].lower()
+          assert "Do not output a storyboard" in data["video_prompt"]
+          PY

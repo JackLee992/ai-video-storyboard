@@ -1,0 +1,4 @@
+interface:
+  display_name: "AI Video Storyboard"
+  short_description: "Turn a video idea into storyboard-driven prompts"
+  default_prompt: "Use $ai-video-storyboard to turn my short video idea into storyboard, asset, and video-generation prompts."
