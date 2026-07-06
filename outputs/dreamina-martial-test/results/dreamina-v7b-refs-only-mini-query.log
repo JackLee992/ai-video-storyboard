@@ -1,0 +1,26 @@
+{
+  "submit_id": "dc2c51df-ebeb-410d-b686-11bb69278be9",
+  "prompt": "参考图一提供两位武者身份，男武者黑色训练服红腰带，女武者深蓝训练服白色护手。参考图二提供雨夜木质武馆，湿木地板反光，暖灯和蓝色雨光同时存在。生成一段4秒16:9电影武术短片，画面聚焦两位武者在武馆中央徒手交锋。男武者从左侧压近，前脚踩实湿木地板，髋部旋转，右掌贴向女武者护臂。女武者低马步承力，白色护手和前臂接住男武者手臂，肩膀后震，脚底压出水光。随后女武者转髋回弹，掌根贴上男武者胸前防线，男武者胸口后收，脚跟退半步。动作有真实重量，接触点在画面中央停留一个重拍，衣袖、头发、地板水光和短促镜头震动共同表现力量传递。镜头低机位中景，轻微环绕，最后停在女武者占据中心线的胜负瞬间。",
+  "gen_status": "success",
+  "result_json": {
+    "images": [],
+    "videos": [
+      {
+        "path": "outputs/dreamina-martial-test/results/dc2c51df-ebeb-410d-b686-11bb69278be9_video_1.mp4",
+        "fps": 24,
+        "width": 1280,
+        "height": 720,
+        "format": "mp4",
+        "duration": 4.042
+      }
+    ]
+  },
+  "credit_count": 36,
+  "queue_info": {
+    "queue_idx": 0,
+    "priority": 1,
+    "queue_status": "Finish",
+    "queue_length": 0,
+    "debug_info": "{\"have_no_dreamina_queue_name\":false,\"dreamina_matrix_queue_name\":\"dreamina_fusion_video40_mini\",\"dreamina_matrix_req_key\":\"DreaminaFusion:Video40_Mini_unified_edit\",\"dreamina_matrix_second_req_key\":\"\",\"have_no_queue_name\":true,\"queue_name\":\"\",\"matrix_req_key\":\"\",\"matrix_second_req_key\":\"\"}"
+  }
+}

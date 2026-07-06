@@ -95,6 +95,63 @@ V6 responds to the observation that Dreamina may treat negative terms as active 
 
 See `run-v6-positive-contact-qa.md` for review notes.
 
+## V7 Refs-Only Submission
+
+V7 tests the lowest-control version requested by the user: only the character reference image and dojo environment reference image are provided. There are no storyboard panels, no keyframes, and no previous video input. The entire action is controlled through a positive-only physical prompt.
+
+- Command: `dreamina multimodal2video`
+- Model: `seedance2.0fast`
+- Inputs:
+  - `assets/character-reference.png`
+  - `assets/dojo-environment-reference.png`
+- Duration: `6`
+- Ratio: `16:9`
+- Resolution: `720p`
+- Credit count reported by Dreamina: `30`
+- Submit ID: `730d89dc-1672-4fe1-98ba-7dedb833f1a7`
+- Status: `fail`
+- Fail reason: `generation failed: final generation failed`
+
+See `dreamina-prompt-v7-refs-only.md` for the submitted prompt.
+
+## V7b Refs-Only Mini Submission
+
+V7b keeps the same low-control setup but simplifies the action to one 4-second close-contact exchange and uses `seedance2.0mini`.
+
+- Command: `dreamina multimodal2video`
+- Model: `seedance2.0mini`
+- Inputs:
+  - `assets/character-reference.png`
+  - `assets/dojo-environment-reference.png`
+- Duration: `4`
+- Ratio: `16:9`
+- Output: `1280x720`, `24fps`, `mp4`, with audio
+- Credit count reported by Dreamina: `36`
+- Submit ID: `dc2c51df-ebeb-410d-b686-11bb69278be9`
+- Result video: `results/dc2c51df-ebeb-410d-b686-11bb69278be9_video_1.mp4`
+- Preview sheet: `results/preview_frames/v7b-refs-only-mini-preview-4fps.jpg`
+
+## V8 Refs-Only Dense Exchange Submission
+
+V8 follows the user's request to let the action direction be more creative and denser, while still using only the character and background references. It creates a 6-second close-range exchange with multiple attack-defense turns.
+
+- Command: `dreamina multimodal2video`
+- Model: `seedance2.0mini`
+- Inputs:
+  - `assets/character-reference.png`
+  - `assets/dojo-environment-reference.png`
+- Duration: `6`
+- Ratio: `16:9`
+- Output: `1280x720`, `24fps`, `mp4`, with audio
+- Credit count reported by Dreamina: `54`
+- Submit ID: `a84c3af0-a2cf-4b5e-be8a-c271754f00fa`
+- Result video: `results/a84c3af0-a2cf-4b5e-be8a-c271754f00fa_video_1.mp4`
+- Preview sheets:
+  - `results/preview_frames/v8-refs-only-dense-preview-4fps.jpg`
+  - `results/preview_frames/v8-refs-only-dense-contact-8fps.jpg`
+
+See `dreamina-prompt-v8-refs-only-dense.md` and `run-v8-refs-only-dense-qa.md`.
+
 ## Seedance 2.0 Attempts
 
 The CLI's `multiframe2video` command does not support `model_version`, so there is no direct way to force the successful multiframe route onto Seedance 2.0 from the current CLI surface.
