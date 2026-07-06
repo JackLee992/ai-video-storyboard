@@ -1,0 +1,15 @@
+{
+  "submit_id": "7008606c-7ee8-48b3-bae0-478014abd626",
+  "prompt": "参考输入：四张图片是必须遵循的动作关键帧，视频是上一版粗糙动作草稿。请使用这些素材重新生成一段5秒16:9电影武术短片，重点不是换动作，而是把动作变得行云流水、连贯、有真实重心和身法。保持同一雨夜木质武馆、同一男女武者、同一服装。动作顺序：对峙守架 -> 男武者沿弧线压迫并探掌 -> 男武者高踢真实接触女武者上臂/肩侧防守，女武者肩膀后震、脚步滑退 -> 女武者借承受冲击的身体回弹 pivot 转身反击，掌法真实接触男武者胸前或手臂防线 -> 两人短暂停住，女武者占据中心线优势。动作风格：连续一镜感，步法带动腰胯，手脚衔接自然，攻击有蓄力、接触、回收，防守有承受、卸力、反击，不要像四张静态图之间硬插值。镜头风格：低机位中景，轻微环绕和跟随，摄影机跟随女武者转身完成反击转折，接触瞬间轻微震动但不乱晃。真实可读、非血腥、无武器、无第三人、无文字字幕，避免身体穿模、瞬移、额外肢体、姿势突然跳变、卡顿、机械动作、滑步漂移、借位、没打到、安全空隙、假接触。",
+  "logid": "202607061210050101720330218173312",
+  "gen_status": "fail",
+  "fail_reason": "generation failed: final generation failed",
+  "credit_count": 80,
+  "queue_info": {
+    "queue_idx": 0,
+    "priority": 1,
+    "queue_status": "Finish",
+    "queue_length": 0,
+    "debug_info": "{\"have_no_dreamina_queue_name\":false,\"dreamina_matrix_queue_name\":\"dreamina_fusion_video40_pro\",\"dreamina_matrix_req_key\":\"DreaminaFusion:Video40_Pro_unified_edit_720p\",\"dreamina_matrix_second_req_key\":\"\",\"have_no_queue_name\":true,\"queue_name\":\"\",\"matrix_req_key\":\"\",\"matrix_second_req_key\":\"\"}"
+  }
+}

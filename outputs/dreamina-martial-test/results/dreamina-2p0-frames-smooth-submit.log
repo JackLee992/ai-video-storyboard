@@ -1,0 +1,15 @@
+{
+  "submit_id": "150886b8-d279-4a1d-9cdc-94f9bb332bb3",
+  "prompt": "生成一段6秒16:9电影武术短片，使用第一帧作为起点、最后一帧作为终点。保持同一雨夜木质武馆、同一男女武者、同一服装和左右关系。重点是行云流水的连续打斗，不要像关键帧硬插值。动作从安静对峙开始，男武者沿弧线逼近，步法带动腰胯，先探掌试压；女武者侧步守位、保持中心线。中段男武者顺势高踢，脚真实接触女武者的上臂或肩侧防守，女武者承受冲击、肩膀后震、脚步滑退，用身体回弹衔接 pivot 转身反击。终点必须落到最后一帧的状态：女武者掌法真实接触男武者胸前或手臂防线，男武者后退半步并停住，女武者占据中心线优势。动作要求：重心连续、步法自然、攻防有蓄力-接触-卸力-回收-反击，镜头低机位中景轻微环绕并跟随女武者转身，接触瞬间轻微震动但不乱晃。真实可读、非血腥、无武器、无第三人、无文字字幕，避免卡顿、机械动作、姿势跳变、瞬移、滑步漂移、身体穿模、额外肢体、借位、没打到、安全空隙、假接触。",
+  "logid": "20260706121451010172033021960CE47",
+  "gen_status": "fail",
+  "fail_reason": "generation failed: final generation failed",
+  "credit_count": 48,
+  "queue_info": {
+    "queue_idx": 0,
+    "priority": 1,
+    "queue_status": "Finish",
+    "queue_length": 0,
+    "debug_info": "{\"have_no_dreamina_queue_name\":false,\"dreamina_matrix_queue_name\":\"dreamina_fusion_video40_pro\",\"dreamina_matrix_req_key\":\"DreaminaFusion:Video40_Pro_end_frame_720p\",\"dreamina_matrix_second_req_key\":\"\",\"have_no_queue_name\":true,\"queue_name\":\"\",\"matrix_req_key\":\"\",\"matrix_second_req_key\":\"\"}"
+  }
+}

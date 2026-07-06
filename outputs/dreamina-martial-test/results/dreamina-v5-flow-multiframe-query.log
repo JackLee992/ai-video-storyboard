@@ -1,0 +1,25 @@
+{
+  "submit_id": "52ddbfce-9875-4ae8-bc4c-62e0e6ed4ee4",
+  "gen_status": "success",
+  "result_json": {
+    "images": [],
+    "videos": [
+      {
+        "path": "outputs/dreamina-martial-test/results/52ddbfce-9875-4ae8-bc4c-62e0e6ed4ee4_video_1.mp4",
+        "fps": 24,
+        "width": 1248,
+        "height": 704,
+        "format": "mp4",
+        "duration": 6.209
+      }
+    ]
+  },
+  "credit_count": 12,
+  "queue_info": {
+    "queue_idx": 0,
+    "priority": 1,
+    "queue_status": "Finish",
+    "queue_length": 0,
+    "debug_info": "{\"have_no_dreamina_queue_name\":false,\"dreamina_matrix_queue_name\":\"dreamina_fusion_video3_fast_multi_frame_720p\",\"dreamina_matrix_req_key\":\"DreaminaFusion:Video3_fast_multi_frame_720p\",\"dreamina_matrix_second_req_key\":\"\",\"have_no_queue_name\":true,\"queue_name\":\"\",\"matrix_req_key\":\"\",\"matrix_second_req_key\":\"\"}"
+  }
+}

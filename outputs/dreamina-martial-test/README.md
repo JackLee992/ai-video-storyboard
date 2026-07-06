@@ -58,6 +58,41 @@ The multiframe task completed successfully:
 
 See `run-v4-qa.md` for the review notes.
 
+## V5 Flow Submission
+
+V5 responds to the problem that V4 has the right story beats but still feels too much like hard interpolation between poses.
+
+- Command: `dreamina multiframe2video`
+- Inputs: same 4 keyframes
+- Transition durations: `2`, `2`, `2`
+- Total duration: `6.209`
+- Output: `1248x704`, `24fps`, `mp4`
+- Credit count reported by Dreamina: `12`
+- Submit ID: `52ddbfce-9875-4ae8-bc4c-62e0e6ed4ee4`
+- Result video: `results/52ddbfce-9875-4ae8-bc4c-62e0e6ed4ee4_video_1.mp4`
+- Preview sheet: `results/preview_frames/v5-flow-preview-4fps.jpg`
+
+See `run-v5-flow-qa.md` for review notes.
+
+## Seedance 2.0 Attempts
+
+The CLI's `multiframe2video` command does not support `model_version`, so there is no direct way to force the successful multiframe route onto Seedance 2.0 from the current CLI surface.
+
+Two Seedance 2.0 alternatives were tested:
+
+- `multimodal2video --model_version seedance2.0` with 4 keyframes plus the V4 video as a motion rough cut.
+  - Submit ID: `7008606c-7ee8-48b3-bae0-478014abd626`
+  - Status: `fail`
+  - Fail reason: `generation failed: final generation failed`
+  - Credit count reported by Dreamina: `80`
+- `frames2video --model_version seedance2.0` from the stance keyframe to the counter-stop keyframe.
+  - Submit ID: `150886b8-d279-4a1d-9cdc-94f9bb332bb3`
+  - Status: `fail`
+  - Fail reason: `generation failed: final generation failed`
+  - Credit count reported by Dreamina: `48`
+
+Both failures used the `Video40_Pro` backend. The practical route that currently works is still the fast multiframe backend, with more fluid transition prompts and longer segment durations.
+
 ## Prompt
 
 See `dreamina-prompt.md` for the original submitted prompt and full CLI plan.
