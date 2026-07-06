@@ -34,4 +34,8 @@ dreamina query_result \
 
 ## Prompt
 
-See `dreamina-prompt.md` for the routed action prompt and full CLI plan.
+See `dreamina-prompt.md` for the original submitted prompt and full CLI plan.
+
+See `dreamina-prompt-v2.md` for the corrected prompt that expands technique IDs such as `1.1` and `5.6` into concrete camera/blocking instructions. V2 has not been submitted to Dreamina yet.
+
+See `dreamina-prompt-v3-ai-contact.md` for the AI-only contact revision. V3 removes live-action ideas such as "safe gap", "no real contact", and "miss behind the head"; it asks Dreamina for visible fictional contact with camera and performance impact.
