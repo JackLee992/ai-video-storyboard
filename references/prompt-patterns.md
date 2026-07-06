@@ -138,6 +138,19 @@ Avoid:
 {negative_constraints}
 ```
 
+## Dreamina Action Prompt Note
+
+For Dreamina / 即梦 martial-arts or fight videos, keep the submitted action prompt positive-only. Do not include a negative-constraints section that names unwanted action concepts, because the model may still activate the named concepts. Put caveats in QA notes instead.
+
+Use desired physical evidence:
+
+- feet planted into the floor
+- hip and shoulder rotation driving strikes
+- contact point held for a readable beat
+- guard compression, recoil, and weight transfer
+- cloth, hair, water, floor reflection, and camera impulse reacting to impact
+- intermediate keyframes for load, contact, recoil, and counter
+
 ## QA Checklist
 
 Before image generation:

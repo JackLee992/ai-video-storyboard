@@ -74,6 +74,27 @@ V5 responds to the problem that V4 has the right story beats but still feels too
 
 See `run-v5-flow-qa.md` for review notes.
 
+## V6 Positive-Contact Submission
+
+V6 responds to the observation that Dreamina may treat negative terms as active concepts. The generation prompt uses positive physical evidence only: planted feet, hip rotation, locked contact points, guard compression, recoil, and counter-force.
+
+- Command: `dreamina multiframe2video`
+- Inputs: 6 keyframes
+- Added keyframes:
+  - `keyframes/key_02b_weight_load.png`
+  - `keyframes/key_03b_contact_recoil.png`
+- Transition durations: `1.1`, `1.1`, `1.0`, `1.1`, `1.2`
+- Total duration: `5.209`
+- Output: `1248x704`, `24fps`, `mp4`
+- Credit count reported by Dreamina: `10`
+- Submit ID: `4008b6b8-aab1-4605-8295-e8de9aec2485`
+- Result video: `results/4008b6b8-aab1-4605-8295-e8de9aec2485_video_1.mp4`
+- Preview sheets:
+  - `results/preview_frames/v6-positive-contact-preview-4fps.jpg`
+  - `results/preview_frames/v6-contact-window-8fps.jpg`
+
+See `run-v6-positive-contact-qa.md` for review notes.
+
 ## Seedance 2.0 Attempts
 
 The CLI's `multiframe2video` command does not support `model_version`, so there is no direct way to force the successful multiframe route onto Seedance 2.0 from the current CLI surface.
