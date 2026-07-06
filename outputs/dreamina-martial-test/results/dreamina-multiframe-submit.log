@@ -1,0 +1,25 @@
+{
+  "submit_id": "075a1c71-fa7a-47ab-97b3-78899786259f",
+  "gen_status": "success",
+  "result_json": {
+    "images": [],
+    "videos": [
+      {
+        "video_url": "https://v6-artist.vlabvod.com/e640e885daf7b0fdc54782d94a697600/6a4b3474/video/tos/cn/tos-cn-v-148450/ocMJ4qjnDsDhElJpXQ1QeAXLImgZJdhqBAkQpj/?a=4066&ch=0&cr=0&dr=0&er=0&lr=display_watermark_aigc&cd=0%7C0%7C0%7C0&br=26000&bt=26000&cs=0&ds=12&ft=5QYTUxhhe6BMyqHEKDeJD12Nzj&mime_type=video_mp4&qs=0&rc=ODtoNThkaTUzNDw3MzY4N0BpMzw5bzZrb21sPDczNDM7M0BhYmBiYzI2XmMxY182YC1fYSNpMHFfcWduYDJhLS1kNC9zcw%3D%3D&btag=80000e00008000&dy_q=1783309919&feature_id=04b16e464b574158bb99cac30ccb1f5e&l=20260706115012010172033021332A934",
+        "fps": 24,
+        "width": 1248,
+        "height": 704,
+        "format": "mp4",
+        "duration": 5.209
+      }
+    ]
+  },
+  "credit_count": 10,
+  "queue_info": {
+    "queue_idx": 0,
+    "priority": 1,
+    "queue_status": "Finish",
+    "queue_length": 0,
+    "debug_info": "{\"have_no_dreamina_queue_name\":false,\"dreamina_matrix_queue_name\":\"dreamina_fusion_video3_fast_multi_frame_720p\",\"dreamina_matrix_req_key\":\"DreaminaFusion:Video3_fast_multi_frame_720p\",\"dreamina_matrix_second_req_key\":\"\",\"have_no_queue_name\":true,\"queue_name\":\"\",\"matrix_req_key\":\"\",\"matrix_second_req_key\":\"\"}"
+  }
+}
